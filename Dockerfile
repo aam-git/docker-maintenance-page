@@ -9,8 +9,6 @@ RUN a2enmod rewrite headers
 
 WORKDIR /var/www/html
 
-USER www-data
-
 COPY .htaccess .htaccess
 COPY maintenance.php maintenance.php
 
