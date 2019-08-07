@@ -1,0 +1,5 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} !/maintenance.php$ [NC]
+
+RewriteRule .* /maintenance.php [R=503,L]
